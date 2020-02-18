@@ -17,6 +17,7 @@ minecraft {
 
 repositories {
     maven { url = "http://maven.fabricmc.net/" }
+    maven { url = 'https://maven.dblsaiko.net/' }
 }
 
 dependencies {
@@ -30,6 +31,14 @@ dependencies {
 
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
 
+    // Cotton Config
+    modRuntime(group: 'net.dblsaiko.qcommon.cfg', name: 'cfg', version: '2.0.2-20') {
+        exclude group: 'net.fabricmc.fabric-api'
+    }
+    modImplementation(group: 'net.dblsaiko.qcommon.cfg', name: 'cfg-core', version: '2.0.2-20') {
+        exclude group: 'net.fabricmc.fabric-api'
+    }
+    include group: 'net.dblsaiko.qcommon.cfg', name: 'cfg', version: '2.0.2-20'
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
 }
