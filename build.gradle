@@ -32,7 +32,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
 
     // Cotton Config
-    modImplementation "io.github.cottonmc.cotton:cotton:<version>"
+    modImplementation "io.github.cottonmc.cotton:cotton:1.0.2"
     // (optional)
     include "io.github.cottonmc.cotton:cotton:1.0.2"
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
