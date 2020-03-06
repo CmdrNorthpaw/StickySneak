@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.fabricmc.example.ExampleModKt::init"
+    ],
+    "client": [
+      "cmdrnorthpaw.stickysneak.sneakLock"
     ]
   },
   "mixins": [
